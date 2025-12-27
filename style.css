@@ -1,0 +1,260 @@
+  :root {
+      --brand-green: #204E40;
+      --brand-orange: #FF8C54;
+      --bg-pattern: #F0F6FF;
+  }
+
+  body {
+      font-family: 'Nunito', sans-serif;
+      overflow-x: hidden;
+  }
+
+
+
+  .left-panel {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0;
+      position: relative;
+  }
+
+
+  .star-stack {
+      position: relative;
+      display: inline-block;
+      width: 70px;
+      height: auto;
+  }
+
+
+  .overlay-star {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: auto;
+      z-index: 2;
+  }
+
+   .hero-desc {
+      color: #666;
+      font-size: 15.2px;
+      line-height: 1.6;
+      max-width: 550px;
+      margin-top: 20px;
+  }
+
+    .avatar-group img {
+      width: 95px;
+      height: 92px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-left: -50px;
+      object-fit: cover;
+  }
+
+  .avatar-group img:first-child {
+      margin-left: 0;
+  }
+
+  
+  .btn-brand {
+      background-color: var(--brand-green);
+      color: white;
+      border-radius: 50px;
+      padding: 12px 35px;
+      font-weight: 700;
+      border: none;
+      transition: 0.3s;
+  }
+
+  .btn-brand:hover {
+      background-color: #16362d;
+      color: white;
+  }
+
+  .btn-video {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      gap: 15px;
+  }
+
+  .play-circle {
+      width: 45px;
+      height: 45px;
+      background: var(--brand-orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 17.6px;
+      padding-left: 3px;
+  }
+
+
+
+  .nav-link {
+      color: #888;
+      font-weight: 600;
+      font-size: 15.2px;
+      margin-left: 20px;
+  }
+
+  .brand-icon {
+      width: 35px;
+      height: auto;
+      object-fit: contain;
+  }
+
+  .brand-text {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 700;
+      font-size: 20.8px;
+      color: #204E40;
+      line-height: 1;
+  }
+
+  .nav-link:hover {
+      color: var(--brand-green);
+  }
+
+  .hero-title {
+      font-size: 60.8px;
+      font-weight: 900;
+      line-height: 1.15;
+      color: #1a1a1a;
+      letter-spacing: -1px;
+  }
+
+  .star-icon {
+      color: var(--brand-orange);
+      font-size: 40px;
+      vertical-align: middle;
+      margin-left: 10px;
+  }
+
+ 
+
+  .stats-bar {
+      background-color: var(--brand-orange);
+      color: white;
+      padding: 35px 50px;
+      width: 100%;
+
+  }
+
+  .stat-item {
+      border-left: 4px solid #FFD15C;
+      padding-left: 25px;
+  }
+
+
+  .stat-num {
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 1;
+  }
+
+  .stat-label {
+      font-size: 16px;
+      font-weight: 400;
+      opacity: 0.9;
+      display: block;
+      margin-top: 5px;
+  }
+
+
+  .right-panel {
+      background-image: linear-gradient(#dee5f0, #C5D3EA), url('images/Maskgroup.png');
+
+      background-blend-mode: overlay;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      width: 100%;
+      max-width: 550px;
+  }
+
+  .grid-img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .shape-circle {
+      border-radius: 50%;
+  }
+
+  .shape-rounded {
+      border-radius: 25px;
+  }
+
+  .shape-leaf-left {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block;
+
+      border-radius: 25px;
+      border-top-left-radius: 100px;
+
+      border: none;
+      background-color: transparent;
+  }
+
+  .shape-leaf-right {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      display: block;
+      border: none;
+      background-color: transparent;
+  }
+
+
+  @media (max-width: 991px) {
+      .hero-title {
+          font-size: 40px;
+      }
+
+      .stats-bar {
+          padding: 30px;
+      }
+
+      .right-panel {
+          padding: 60px 20px;
+      }
+
+      .navbar-nav {
+          background: white;
+          padding: 20px;
+          z-index: 99;
+      }
+  }
+
+  @media (max-width: 991px) {
+      .star-stack {
+          width: 50px;
+      }
+  }
